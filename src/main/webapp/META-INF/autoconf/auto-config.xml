@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <group>
+        <property name="redis.host" defaultValue="${redis.host}" description="" />
+        <property name="redis.port" defaultValue="${redis.port}" description="" />
+        <property name="redis.password" defaultValue="${redis.password}" description="" />
+        <property name="redis.timeout" defaultValue="${redis.timeout}" description="" />
+        <property name="redis.maxTotal" defaultValue="${redis.maxTotal}" description="" />
+        <property name="redis.maxIdle" defaultValue="${redis.maxIdle}" description="" />
+        <property name="redis.minIdle" defaultValue="${redis.minIdle}" description="" />
+        <property name="redis.maxWait" defaultValue="${redis.maxWait}" description="" />
+        <property name="redis.testOnBorrow" defaultValue="${redis.testOnBorrow}" description="" />
+        <property name="defaultCacheExpireTime" defaultValue="${defaultCacheExpireTime}" description="" />
+
+        <property name="test.namesrv.addr" defaultValue="${test.namesrv.addr}" description="" />
+        <property name="throwDone" defaultValue="${throwDone}" description="" />
+    </group>
+
+    <script>
+        <generate template="redis.properties.vm" destfile="/WEB-INF/classes/redis.properties" charset="UTF-8" />
+        <generate template="config.properties.vm" destfile="/WEB-INF/classes/config.properties" charset="UTF-8" />
+    </script>
+</config>

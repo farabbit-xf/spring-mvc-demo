@@ -1,0 +1,2 @@
+test.namesrv.addr=$!{test.namesrv.addr}
+throwDone=$!{throwDone}

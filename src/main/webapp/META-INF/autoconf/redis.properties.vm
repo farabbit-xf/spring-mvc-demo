@@ -1,0 +1,10 @@
+redis.host=${redis.host}
+redis.port=$!{redis.port}
+redis.password=${redis.password}
+redis.timeout=$!{redis.timeout}
+redis.maxTotal=$!{redis.maxTotal}
+redis.maxIdle=$!{redis.maxIdle}
+redis.minIdle=$!{redis.minIdle}
+redis.maxWait=$!{redis.maxWait}
+redis.testOnBorrow=$!{redis.testOnBorrow}
+defaultCacheExpireTime=$!{defaultCacheExpireTime}
